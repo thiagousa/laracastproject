@@ -15,13 +15,18 @@
     
     padding: 2em;
     
-    text-align: center;
 }
     </style> 
 </head>
 <body>
 <header>
-<h1><?= $greenting; ?></h1>
+<ul>
+<?php foreach ($names as $name) : ?>
+
+<li><?php echo $name ?> </li>
+
+<?php endforeach;  ?>
+</ul>
 </header>
 </body>
 </html>

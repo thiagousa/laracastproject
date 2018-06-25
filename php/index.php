@@ -1,5 +1,12 @@
 <?php
 
-$greenting = 'Hello, World';
+$names = [
+'Bruno',
+'Thiago',
+'Lucas',
+
+
+];
+
 
 require 'index.view.php';
