@@ -7,26 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-    <style>
-  header  {
-
-    
-    background : #e3e3e3;
-    
-    padding: 2em;
-    
-}
-    </style> 
+ 
 </head>
 <body>
-<header>
+<h1> Taks for the Day</h1>
 <ul>
-<?php foreach ($names as $name) : ?>
+<li> 
+<strong>Name:  </strong><?= $task['title']; ?>
 
-<li><?php echo $name ?> </li>
+</li>
+<li> 
+<strong>Due Date::  </strong><?= $task['due']; ?>
 
-<?php endforeach;  ?>
+</li>
+<li> 
+<strong>Personal Responsible:  </strong><?= $task['assigned_to']; ?>
+
+</li>
+<li> 
+<strong>Status:  </strong><?= $task['completed'] ? 'Complete': 'Imcomplete' ; ?>
+
+</li>
+
 </ul>
-</header>
+
 </body>
 </html>
