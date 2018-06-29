@@ -10,26 +10,29 @@
  
 </head>
 <body>
-<h1> Taks for the Day</h1>
+
 <ul>
-<li> 
-<strong>Name:  </strong><?= $task['title']; ?>
+
+<?php foreach ($tasks as $task) : ?>
+
+<li>
+
+<?php if ($task->completed):?> 
+
+<strike> <?= $task->description; ?> </strike>
+
+<?php else: ?>
+
+<?= $task->description; ?>
+
+<?php endif; ?>
 
 </li>
-<li> 
-<strong>Due Date::  </strong><?= $task['due']; ?>
 
-</li>
-<li> 
-<strong>Personal Responsible:  </strong><?= $task['assigned_to']; ?>
-
-</li>
-<li> 
-<strong>Status:  </strong><?= $task['completed'] ? 'Complete': 'Imcomplete' ; ?>
-
-</li>
+<?php endforeach; ?>
 
 </ul>
+
 
 </body>
 </html>

@@ -1,16 +1,11 @@
 <?php 
 
-function ageClub ($age){
+function dd($data){
 
-if ($age<=15){
+    echo '<pre>';
 
-    echo 'Go out, KID';
+    die(var_dump($data));
 
-}
-else {
-
-    echo 'Go in Man';
-
-}
+    echo '</pre>';
 
 }
