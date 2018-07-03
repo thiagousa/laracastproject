@@ -17,7 +17,7 @@
 
 <li>
 
-<?php if ($task->completed):?> 
+<?php if ($task->status):?> 
 
 <strike> <?= $task->description; ?> </strike>
 

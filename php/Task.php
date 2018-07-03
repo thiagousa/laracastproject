@@ -4,7 +4,7 @@
 class Task
 {
     public $description;
-    public $completed = false;
+    public $status = false;
 
        
 
