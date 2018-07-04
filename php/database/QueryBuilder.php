@@ -14,7 +14,7 @@ public function __construct($pdo){
 
 public function selectAll($table){
 
-    $statement = $this->pdo->prepare("Select * from todos {$table} ");
+    $statement = $this->pdo->prepare("Select * from {$table} ");
 
     $statement->execute();
 
