@@ -12,9 +12,19 @@
 <body>
 <header>
 <ul>
-<li> </li>
+<li>
+ <a href='/about'> About</a>
+</li>
+<li>
+ <a href='/contact'> Contact </a>
+</li>
+<li>
+ <a href='/about/culture'> About US Culture </a>
+</li>
 </ul>
 </header>
+
+<h1> My Tasks </h1>
 
 <ul>
 
